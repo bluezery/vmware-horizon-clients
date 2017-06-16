@@ -1,0 +1,15 @@
+#!/bin/bash
+RED='\e[0;31m'
+BLU='\e[0;34m'
+GRN='\e[0;32m'
+BOL='\e[1m'
+BLI='\e[5m'
+NOC='\e[0m'
+set -e
+
+if [[ $euid -ne 0 ]]; then
+   echo "this script must be run as root" 1>&2
+   exit 1
+fi
+
+VMWARE_EULAS_AGREED=yes /usr/share/nemo-vmware/VMware-Horizon-Client-4.5.0-5650368.x64.bundle --console --required

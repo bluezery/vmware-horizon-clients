@@ -1,0 +1,26 @@
+Source: vmware-horizon-clients
+Priority: optional
+Maintainer: Taehwan Kim <taehwan@nemoux.net>
+Build-Depends: debhelper (>=9), libc6-dev, python
+Standards-Version: 3.9.8
+Section: libs
+Homepage: http://www.nemoux.net
+#Vcs-Git: git://anonscm.debian.org/collab-maint/vmware-horizon-clients.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/vmware-horizon-clients.git
+
+Package: vmware-horizon-clients
+Priority: optional
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, mujs, skia
+Description: VMware Horizon Clients
+ <insert long description, indented with spaces>
+
+Package: vmware-horizon-clients-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: vmware-horizon-clients (= ${binary:Version})
+    ${shlibs:Depends}, ${misc:Depends}
+Description: VMware Horizon Clients debugging symbols
+ <insert long description, indented with spaces>
