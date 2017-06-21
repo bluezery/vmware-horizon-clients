@@ -12,7 +12,7 @@ Package: vmware-horizon-clients
 Priority: optional
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, mujs, skia
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: VMware Horizon Clients
  <insert long description, indented with spaces>
 
